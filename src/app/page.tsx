@@ -10,7 +10,6 @@ import HtmlToJSX from "./helpers/functions/htmlToJsx";
 import { PortableText } from "@portabletext/react";
 import { InlineWidget } from "react-calendly";
 import Calendly from "./components/Calendly/Calendly.component";
-import Svg from "../../public/svgs/svgComponent/svg.component";
 
 export const dynamic = "force-dynamic";
 
@@ -68,22 +67,21 @@ export default async function Home() {
           }}
         />
       </div>
-      <div className={style.cta}>
-        <button>
-          BOOK MY <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
-          GROWTH CALL NOW!
-        </button>
+
+      <div className={style.calendly}>
         <div>
-          <Svg icon="DangerIcon" color="white" size="15px" />
-          <p>Limited Time-Slots Avalible</p>
+          <Calendly />
         </div>
       </div>
-
       <footer className={style.footer}>
         <div className={style.footerAbout}>
           <p>ABOUT TVG:</p>
-          <p></p>
+          <p>
+            We are a digital marketing and consulting group 100% focused on the
+            fitness industry.
+          </p>
         </div>
+        <p>© 2023, THE VISONARY GROUP</p>
       </footer>
     </main>
   );
