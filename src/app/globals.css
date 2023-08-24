@@ -1,0 +1,39 @@
+:root {
+  --borderRadius: 3px;
+
+  --highlightColor: #22f400;
+  --primaryColor: #30b143;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--Inter);
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h3 {
+  font-family: var(--Caveat);
+}
+
+p {
+  font-family: var(--Inter);
+}

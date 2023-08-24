@@ -1,0 +1,93 @@
+.main {
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 20px;
+
+  height: 90px;
+  background: black;
+  padding: 15px 24px;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header > div {
+  height: 85%;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.backgroundImage > div:first-child {
+  height: 90px;
+}
+
+.backgroundImage > div:last-child {
+  border-bottom: 2px solid black;
+}
+
+.heading {
+  padding: 0px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.heading > p {
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+
+.heading > p > em {
+  color: var(--highlightColor);
+}
+
+.subHeading {
+  position: relative;
+}
+
+.subHeading > h3 {
+  color: var(--highlightColor);
+}
+.subHeading > div {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  height: 60px;
+  width: 60px;
+}
+
+.videoPadding {
+  width: 100%;
+  padding: 0px 24px;
+}
+
+.calendly {
+  margin-top: 40px;
+  padding: 0px 24px;
+  width: 100%;
+}
+
+.calendly > div {
+  width: 100%;
+  background-color: white;
+  border-radius: var(--borderRadius);
+  border: 2px solid black;
+}
