@@ -58,12 +58,17 @@
 .heading > p {
   font-size: 25px;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   line-height: -100%;
+}
+
+.heading > p > strong {
+  font-weight: 900;
 }
 
 .heading > p > em {
   color: var(--highlightColor);
+  font-weight: 800;
 }
 
 .subHeading {
