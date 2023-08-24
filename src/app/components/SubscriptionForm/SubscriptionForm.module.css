@@ -1,0 +1,84 @@
+.formContainer {
+  width: 90vw;
+  background-color: black;
+
+  border: 2px solid white;
+  padding: 25px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.formContainer > div:nth-child(3) > div {
+  font-family: var(--Inter);
+}
+
+.formContainer > div:first-child {
+  width: 70%;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.copy > p:first-child {
+  font-weight: 900;
+}
+
+.copy > p:last-child {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.formContainer > div:nth-last-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formContainer > div:nth-last-child(2) > button {
+  background-color: var(--primaryColor);
+  padding: 15px;
+  color: white;
+  font-family: var(--Inter);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.formContainer > div:nth-last-child(2) > input {
+  padding: 15px;
+
+  font-family: var(--Inter);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.formContainer > p {
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+@media (min-width: 961px) {
+  .formContainer {
+    width: 50vw;
+    background-color: black;
+    border: 2px solid white;
+    padding: 25px;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .copy > p:first-child {
+    font-weight: 900;
+    font-size: 32px;
+  }
+
+  .formContainer > div:first-child {
+    width: 25%;
+  }
+}

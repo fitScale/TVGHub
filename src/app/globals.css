@@ -37,3 +37,9 @@ h3 {
 p {
   font-family: var(--Inter);
 }
+
+@media (min-width: 961px) {
+  h3 {
+    font-size: 30px;
+  }
+}

@@ -4,6 +4,8 @@
   border: 2px solid white;
   border-radius: var(--borderRadius);
   overflow: hidden;
+
+  aspect-ratio: 16/9;
 }
 
 .videoContainer {
@@ -24,4 +26,37 @@
   padding-top: 7px;
   text-align: center;
   padding-bottom: 9px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.thumbnail > div:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(70%) blur(5px);
+}
+
+.thumbnail > div > svg:hover {
+  filter: brightness(80%);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px) brightness(60%);
+  display: grid;
+  place-items: center;
 }

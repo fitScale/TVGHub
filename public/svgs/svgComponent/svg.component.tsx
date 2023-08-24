@@ -33,6 +33,7 @@ import MinusIcon from "../MinusIcon.svg";
 import LilTriangleIcon from "../LilTriangleIcon.svg";
 import DangerIcon from "../DangerIcon.svg";
 import WaterIcon from "../WaterIcon.svg";
+import PlayIcon from "../PlayIcon.svg";
 
 export type SvgNames =
   | "weightLifter"
@@ -65,7 +66,8 @@ export type SvgNames =
   | "MinusIcon"
   | "LilTriangleIcon"
   | "DangerIcon"
-  | "WaterIcon";
+  | "WaterIcon"
+  | "PlayIcon";
 
 interface SvgProps {
   icon: SvgNames;
@@ -292,6 +294,13 @@ const Svg = ({ icon, color, size, stroke }: SvgProps) => {
   if (icon === "WaterIcon") {
     return (
       <WaterIcon
+        style={{ fill: color ? color : "black", height: size ? size : "20px" }}
+      />
+    );
+  }
+  if (icon === "PlayIcon") {
+    return (
+      <PlayIcon
         style={{ fill: color ? color : "black", height: size ? size : "20px" }}
       />
     );
