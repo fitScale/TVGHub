@@ -10,6 +10,7 @@ import HtmlToJSX from "./helpers/functions/htmlToJsx";
 import { PortableText } from "@portabletext/react";
 import { InlineWidget } from "react-calendly";
 import Calendly from "./components/Calendly/Calendly.component";
+import Svg from "../../public/svgs/svgComponent/svg.component";
 
 export const dynamic = "force-dynamic";
 
@@ -67,11 +68,23 @@ export default async function Home() {
           }}
         />
       </div>
-      <div className={style.calendly}>
+      <div className={style.cta}>
+        <button>
+          BOOK MY <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
+          GROWTH CALL NOW!
+        </button>
         <div>
-          <Calendly />
+          <Svg icon="DangerIcon" color="white" size="15px" />
+          <p>Limited Time-Slots Avalible</p>
         </div>
       </div>
+
+      <footer className={style.footer}>
+        <div className={style.footerAbout}>
+          <p>ABOUT TVG:</p>
+          <p></p>
+        </div>
+      </footer>
     </main>
   );
 }

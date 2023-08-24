@@ -12,6 +12,7 @@
     "@mux/mux-player": "^1.12.1",
     "@mux/mux-player-react": "^1.12.1",
     "@portabletext/react": "^3.0.6",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "20.5.3",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
