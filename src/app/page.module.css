@@ -80,7 +80,7 @@
 }
 
 .calendly {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0px 24px;
   width: 100%;
 }
@@ -90,6 +90,7 @@
   background-color: white;
   border-radius: var(--borderRadius);
   border: 2px solid black;
+  height: fit-content;
 }
 
 .footerAbout {
@@ -130,4 +131,21 @@
   text-align: center;
   font-weight: 600;
   font-size: 11px;
+}
+
+.book {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book > div > svg {
+  transform: rotate(90deg);
+}
+
+.book > div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
