@@ -4,14 +4,11 @@
   border: 2px solid white;
   border-radius: var(--borderRadius);
   overflow: hidden;
-
-  aspect-ratio: 16/9;
+  height: fit-content;
 }
 
 .videoContainer {
   width: 100%;
-  aspect-ratio: 16/9;
-
   background-color: black;
 }
 

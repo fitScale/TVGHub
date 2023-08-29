@@ -2,7 +2,7 @@
 
 import MuxPlayer from "@mux/mux-player-react";
 import style from "./MuxVideo.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ImageContainer from "../ImageContainer/ImageContainer.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
 import SubscribeForm from "../SubscriptionForm/SubsrcriptionForm.component";
