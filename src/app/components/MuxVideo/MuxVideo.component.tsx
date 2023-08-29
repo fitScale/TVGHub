@@ -15,6 +15,8 @@ export interface MuxVideoProps {
   thumbnail: string;
 }
 
+const tes = "";
+
 const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
   const [wall, setWall] = useState(config.wall);
   const [form, setForm] = useState(false);
