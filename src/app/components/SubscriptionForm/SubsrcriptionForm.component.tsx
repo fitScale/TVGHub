@@ -18,7 +18,7 @@ const SubscribeForm = ({
   const mailchimpID = process.env.NEXT_PUBLIC_REACT_APP_MAILCHIMP_ID || "";
 
   // Construct the Mailchimp POST URL
-  const postUrl = `https://fitscale.us21.list-manage.com/subscribe/post?u=${mailchimpU}&id=${mailchimpID}`;
+  const postUrl = `https://thevisionarygrouptx.us18.list-manage.com/subscribe/post?u=${mailchimpU}&id=${mailchimpID}`;
 
   const logoConfig: ImageContainerProps = {
     src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1692828122/TVG/Logos/TVG-full-white-small_s89rkz.png",
