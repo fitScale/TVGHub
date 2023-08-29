@@ -90,10 +90,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
         <div className={style.book}>
-          <h3>
-            BOOK YOU <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
-            GROWTH CALL TODAY{" "}
-          </h3>
+          <h3>{pageData.bookingText}</h3>
           <div>
             <Svg icon="ArrowSkinnyIcon" color="white" />
             <Svg icon="ArrowSkinnyIcon" color="white" />
@@ -142,10 +139,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         </div>
 
         <div className={style.book}>
-          <h3>
-            BOOK YOU <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
-            GROWTH CALL TODAY{" "}
-          </h3>
+          <h3>{pageData.bookingText}</h3>
           <div>
             <Svg icon="ArrowSkinnyIcon" color="white" />
             <Svg icon="ArrowSkinnyIcon" color="white" />

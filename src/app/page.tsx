@@ -83,7 +83,7 @@ export default async function Home() {
         </div>
         <div className={style.book}>
           <h3>
-            BOOK YOU <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
+            BOOK YOUR <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
             GROWTH CALL TODAY{" "}
           </h3>
           <div>
@@ -135,7 +135,7 @@ export default async function Home() {
 
         <div className={style.book}>
           <h3>
-            BOOK YOU <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
+            BOOK YOUR <span style={{ textDecoration: "underline" }}>FREE</span>{" "}
             GROWTH CALL TODAY{" "}
           </h3>
           <div>

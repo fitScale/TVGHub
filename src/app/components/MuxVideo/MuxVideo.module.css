@@ -11,6 +11,7 @@
   width: 100%;
   background-color: black;
   cursor: pointer;
+  aspect-ratio: 16/9;
 }
 
 .banner {

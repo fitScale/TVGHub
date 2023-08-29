@@ -6,6 +6,7 @@ import { useState } from "react";
 import ImageContainer from "../ImageContainer/ImageContainer.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
 import SubscribeForm from "../SubscriptionForm/SubsrcriptionForm.component";
+import { WASI } from "wasi";
 
 export interface MuxVideoProps {
   videoId: string;
@@ -21,7 +22,10 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
   return (
     <div
       className={style.videoBox}
-      style={{ backgroundColor: config.wall ? "transparent" : "black" }}
+      style={{
+        backgroundColor: config.wall ? "transparent" : "black",
+        aspectRatio: wall ? "16/9" : "",
+      }}
     >
       {wall ? (
         <>
