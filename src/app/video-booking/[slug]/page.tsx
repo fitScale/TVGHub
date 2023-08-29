@@ -9,6 +9,7 @@ import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 const client = createClient({
   projectId: "xo86se8r",
