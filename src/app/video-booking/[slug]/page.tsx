@@ -73,7 +73,10 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         </div>
         <div className={style.heading}>
           <h3>{pageData.subHeading}</h3>
-          <PortableText value={pageData.heading} />
+          <p style={{ fontSize: "23px", fontWeight: "900" }}>
+            BOOST YOUR CONVERSION <br />
+            RATE BY 236%*
+          </p>
           <div className={style.subHeading}>
             <h3 style={{ fontFamily: "var(--Inter)", fontSize: "14px" }}>
               When you participate in our market research study. ({" "}
@@ -101,7 +104,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             style={{
               color: "white",
               padding: " 0px 24px",
-              fontSize: "10.5px",
+              fontSize: "10px",
               fontWeight: "600",
               marginBottom: "15px",
             }}
