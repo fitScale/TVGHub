@@ -82,19 +82,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             <ImageContainer config={doodleConfig} />
           </div>
         </div>
-        <p
-          style={{
-            color: "white",
-            padding: " 0px 24px",
-            fontSize: "10.5px",
-            fontWeight: "600",
-            marginBottom: "15px",
-          }}
-        >
-          ( <span style={{ fontWeight: "900" }}>*</span>The percentage increase
-          is based on the average performance uplift seen by our clients
-          compared to standard website traffic. )
-        </p>
+
         <div className={style.videoPadding}>
           <MuxVideo
             config={{
