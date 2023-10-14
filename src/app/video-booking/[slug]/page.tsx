@@ -76,10 +76,25 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           <h3>{pageData.subHeading}</h3>
           <PortableText value={pageData.heading} />
           <div className={style.subHeading}>
-            <h3>{pageData.headingCopy}</h3>
+            <h3 style={{ fontFamily: "var(--Inter)", fontSize: "14px" }}>
+              {pageData.headingCopy}
+            </h3>
             <ImageContainer config={doodleConfig} />
           </div>
         </div>
+        <p
+          style={{
+            color: "white",
+            padding: " 0px 24px",
+            fontSize: "10.5px",
+            fontWeight: "600",
+            marginBottom: "15px",
+          }}
+        >
+          ( <span style={{ fontWeight: "900" }}>*</span>The percentage increase
+          is based on the average performance uplift seen by our clients
+          compared to standard website traffic. )
+        </p>
         <div className={style.videoPadding}>
           <MuxVideo
             config={{

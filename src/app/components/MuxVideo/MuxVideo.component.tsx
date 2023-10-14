@@ -57,7 +57,11 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
       ) : (
         <>
           <div className={style.banner}>
-            <p>{config.videoCaption}</p>
+            <p>
+              {" "}
+              Watch to figure out how to claim your{" "}
+              <span style={{ fontWeight: "800" }}>FREE Landing page!</span>{" "}
+            </p>
           </div>
           <div className={style.videoContainer}>
             <MuxPlayer
