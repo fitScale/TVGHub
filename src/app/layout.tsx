@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--Inter" });
 const caveat = Caveat({ subsets: ["latin"], variable: "--Caveat" });
 
 export const metadata: Metadata = {
-  title: "The Visionary Group ( TVG )",
-  description: "The Visionary Group",
+  title: "FitScale - We Scale Fitness Brands",
+  description: "",
 };
 
 export default function RootLayout({
