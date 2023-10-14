@@ -81,7 +81,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             <h3 style={{ fontFamily: "var(--Inter)", fontSize: "14px" }}>
               When you participate in our market research study. ({" "}
               <span style={{ textDecoration: "underline" }}>
-                Only Takes 15-Mins
+                Only takes 15-mins
               </span>
               {""} )
             </h3>

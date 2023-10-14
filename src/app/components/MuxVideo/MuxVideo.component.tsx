@@ -60,7 +60,7 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
             <p>
               {" "}
               Watch to figure out how to claim your{" "}
-              <span style={{ fontWeight: "800" }}>FREE Landing page!</span>{" "}
+              <span style={{ fontWeight: "800" }}>FREE landing page!</span>{" "}
             </p>
           </div>
           <div className={style.videoContainer}>
