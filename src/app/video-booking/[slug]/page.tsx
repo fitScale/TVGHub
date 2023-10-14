@@ -8,7 +8,6 @@ import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
 
-export const dynamic = "force-dynamic";
 export const revalidate = 3600;
 
 const client = createClient({
@@ -77,7 +76,11 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           <PortableText value={pageData.heading} />
           <div className={style.subHeading}>
             <h3 style={{ fontFamily: "var(--Inter)", fontSize: "14px" }}>
-              {pageData.headingCopy}
+              When you participate in our market research study. ({" "}
+              <span style={{ textDecoration: "underline" }}>
+                Only Takes 15-Mins
+              </span>
+              {""} )
             </h3>
             <ImageContainer config={doodleConfig} />
           </div>
@@ -94,7 +97,20 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
         <div className={style.book}>
-          <h3>{pageData.bookingText}</h3>
+          <p
+            style={{
+              color: "white",
+              padding: " 0px 24px",
+              fontSize: "10.5px",
+              fontWeight: "600",
+              marginBottom: "15px",
+            }}
+          >
+            ( <span style={{ fontWeight: "900" }}>*</span>The percentage
+            increase is based on the average performance uplift seen by our
+            clients compared to standard website traffic. )
+          </p>
+          <h3 style={{ fontWeight: "900" }}>{pageData.bookingText}</h3>
           <div>
             <Svg icon="ArrowSkinnyIcon" color="white" />
             <Svg icon="ArrowSkinnyIcon" color="white" />
