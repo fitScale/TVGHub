@@ -76,7 +76,7 @@
   position: absolute;
   top: 25%;
   right: 15px;
-  z-index: 0;
+  z-index: -1;
   width: 35px;
   transform: rotate(25deg);
   filter: blur(2px);
@@ -91,7 +91,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 .backgroundImage > div:first-child {

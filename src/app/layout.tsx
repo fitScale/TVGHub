@@ -9,6 +9,7 @@ const caveat = Caveat({ subsets: ["latin"], variable: "--Caveat" });
 export const metadata: Metadata = {
   title: "FitScale - We Scale Fitness Brands",
   description: "",
+  themeColor: "black",
 };
 
 export default function RootLayout({
