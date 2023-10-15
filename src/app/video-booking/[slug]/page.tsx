@@ -88,7 +88,9 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             borderBottom: "2px solid white",
           }}
         >
-          <p>Hey {pageData.name}, I've been expecting you 👋</p>{" "}
+          <p>
+            Hey {pageData.name}, {"I've been expecting you 👋"}
+          </p>{" "}
         </div>
         <header className={style.header}>
           <ImageContainer config={logoConfig} />
