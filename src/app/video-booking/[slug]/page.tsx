@@ -186,9 +186,21 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               </div>
             </div>
           </div>
-          <h3 style={{ fontWeight: "900", textDecoration: "underline" }}>
-            {pageData.bookingText}
-          </h3>
+          <p
+            style={{
+              marginTop: "5px",
+              color: "white",
+              fontWeight: "600",
+              fontSize: "14px",
+            }}
+          >
+            Only question is...{" "}
+            <span style={{ fontWeight: "800", textDecoration: "underline" }}>
+              Are you next
+            </span>{" "}
+            ?
+          </p>
+          <h3 style={{ fontWeight: "900" }}>{pageData.bookingText}</h3>
           <div>
             <Svg icon="ArrowSkinnyIcon" color="white" />
             <Svg icon="ArrowSkinnyIcon" color="white" />
