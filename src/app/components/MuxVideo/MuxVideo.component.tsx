@@ -63,7 +63,7 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
           >
             <p style={{ fontWeight: "600" }}>
               {" "}
-              Watch to figure out how to claim your{" "}
+              Watch to see how to claim your{" "}
               <span style={{ fontWeight: "800", textDecoration: "underline" }}>
                 FREE landing page!
               </span>{" "}

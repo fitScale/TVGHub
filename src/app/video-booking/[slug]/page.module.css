@@ -35,9 +35,45 @@
   filter: drop-shadow(1px 1px 10px rgb(0, 0, 0, 0.5));
 }
 
+.trust {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  align-items: center;
+  background-color: rgb(82, 82, 82);
+  width: 100%;
+  border-radius: var(--borderRadius);
+  padding: 20px;
+  border: 1px solid white;
+}
+
+.trust > p {
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.trust > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 5px;
+  height: 20px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.trust > div > div {
+  height: 12px;
+}
+
+.trust > div > div:nth-child(2) {
+  scale: 2.2;
+}
+
 .floating > div:nth-child(2) {
   position: absolute;
-  top: 20%;
+  top: 19%;
   left: -50px;
   z-index: 100;
   width: 75px;
@@ -51,11 +87,12 @@
   right: -40px;
   z-index: 100;
   width: 75px;
+  display: none;
   transform: rotate(10deg);
 }
 .floating > div:nth-child(4) {
   position: absolute;
-  top: 13%;
+  top: 12%;
   left: -20px;
   z-index: 0;
   width: 35px;
@@ -74,7 +111,7 @@
 
 .floating > div:nth-child(6) {
   position: absolute;
-  top: 25%;
+  top: 23%;
   right: 15px;
   z-index: -1;
   width: 35px;
@@ -100,7 +137,7 @@
 
 .backgroundImage > div:last-child {
   border-bottom: 2px solid black;
-  aspect-ratio: 1080/1920;
+  aspect-ratio: 1080/2200;
   width: 100%;
 }
 

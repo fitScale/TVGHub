@@ -7,8 +7,8 @@ import ImageContainer, {
 import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
-export const dynamic = "force-dynamic";
-export const revalidate = 1;
+// export const dynamic = "force-dynamic";
+// export const revalidate = 1;
 
 const client = createClient({
   projectId: "xo86se8r",
@@ -119,7 +119,8 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
                 color: pageData.highlight,
               }}
             >
-              When you participate in our market research study. ({" "}
+              When you participate in our market research <br />
+              study. ({" "}
               <span style={{ textDecoration: "underline" }}>
                 Only takes 15-mins
               </span>
@@ -153,7 +154,41 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             increase is based on the average performance uplift seen by our
             clients compared to standard website traffic. )
           </p>
-          <h3 style={{ fontWeight: "900" }}>{pageData.bookingText}</h3>
+          <div style={{ width: "100%", padding: "0px 24px" }}>
+            <div className={style.trust}>
+              <p>
+                We have made landing pages for{" "}
+                <span
+                  style={{ fontWeight: "700", textDecoration: "underline" }}
+                >
+                  top brands:
+                </span>
+              </p>
+              <div>
+                <ImageContainer
+                  config={{
+                    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697346345/prosupps-logo_uwitld.png",
+                    aspectRatio: "1200/156",
+                  }}
+                />
+                <ImageContainer
+                  config={{
+                    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697346345/White_Klout_prfjkb.png",
+                    aspectRatio: "300/108",
+                  }}
+                />
+                <ImageContainer
+                  config={{
+                    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697346345/Purus_axgqyz.png",
+                    aspectRatio: "1355/183",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          <h3 style={{ fontWeight: "900", textDecoration: "underline" }}>
+            {pageData.bookingText}
+          </h3>
           <div>
             <Svg icon="ArrowSkinnyIcon" color="white" />
             <Svg icon="ArrowSkinnyIcon" color="white" />
@@ -165,13 +200,13 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         </div>
         <footer className={style.footer}>
           <div className={style.footerAbout}>
-            <p>ABOUT TVG:</p>
+            <p>ABOUT FitScale:</p>
             <p>
               We are a digital marketing and consulting group 100% focused on
               the fitness industry.
             </p>
           </div>
-          <p>© 2023, THE VISONARY GROUP</p>
+          <p>© 2023, FitScale</p>
         </footer>
       </main>
       <main className={style.mainDesktop}>
@@ -213,13 +248,13 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         <Calendly />
         <footer className={style.footer}>
           <div className={style.footerAbout}>
-            <p>ABOUT TVG:</p>
+            <p>About FitScale:</p>
             <p>
               We are a digital marketing and consulting group 100% focused on
               the fitness industry.
             </p>
           </div>
-          <p>© 2023, THE VISONARY GROUP</p>
+          <p>© 2023, FitScale</p>
         </footer>
       </main>
     </>
