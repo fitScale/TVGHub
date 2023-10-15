@@ -194,7 +194,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               fontSize: "14px",
             }}
           >
-            Only question is...{" "}
+            The only question is...{" "}
             <span style={{ fontWeight: "800", textDecoration: "underline" }}>
               Are you next
             </span>{" "}
