@@ -7,8 +7,8 @@ import ImageContainer, {
 import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
-
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
+export const revalidate = 1;
 
 const client = createClient({
   projectId: "xo86se8r",
@@ -61,9 +61,25 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
     aspectRatio: "1/1",
   };
 
+  console.log(pageData);
+
   return (
     <>
       <main className={style.main}>
+        <div
+          style={{
+            padding: "12px 0px",
+            width: "100%",
+            backgroundColor: pageData.color,
+            textAlign: "center",
+            color: "white",
+            fontWeight: "700",
+            fontSize: "13px",
+            borderBottom: "2px solid white",
+          }}
+        >
+          <p>Hey {pageData.name}, I've been expecting you ;)</p>{" "}
+        </div>
         <header className={style.header}>
           <ImageContainer config={logoConfig} />
         </header>
@@ -75,7 +91,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           <h3>{pageData.subHeading}</h3>
           <p style={{ fontSize: "23px", fontWeight: "900" }}>
             BOOST YOUR CONVERSION <br />
-            RATE BY 236%*
+            RATE BY 157%*
           </p>
           <div className={style.subHeading}>
             <h3 style={{ fontFamily: "var(--Inter)", fontSize: "14px" }}>
@@ -88,7 +104,6 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             <ImageContainer config={doodleConfig} />
           </div>
         </div>
-
         <div className={style.videoPadding}>
           <MuxVideo
             config={{
