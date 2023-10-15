@@ -7,8 +7,8 @@ import ImageContainer, {
 import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
-// export const dynamic = "force-dynamic";
-// export const revalidate = 1;
+export const dynamic = "force-dynamic";
+export const revalidate = 1;
 
 const client = createClient({
   projectId: "xo86se8r",
@@ -135,7 +135,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
-              color: pageData.highlight,
+              color: pageData.color,
             }}
           />
         </div>
@@ -197,7 +197,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
-              color: pageData.highlight,
+              color: pageData.color,
             }}
           />
         </div>
