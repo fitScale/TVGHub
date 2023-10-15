@@ -7,8 +7,8 @@ import ImageContainer, {
 import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
-export const dynamic = "force-dynamic";
-export const revalidate = 1;
+// export const dynamic = "force-dynamic";
+// export const revalidate = 1;
 
 const client = createClient({
   projectId: "xo86se8r",
@@ -42,8 +42,8 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
   );
 
   const logoConfig: ImageContainerProps = {
-    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1692828122/TVG/Logos/TVG-full-white-small_s89rkz.png",
-    aspectRatio: "391/106",
+    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697340935/FitScaleLogo1_q74m0w.png",
+    aspectRatio: "1080/219",
   };
 
   const mobileBanner: ImageContainerProps = {
@@ -57,15 +57,25 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
   };
 
   const doodleConfig: ImageContainerProps = {
-    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1692834696/Misc%20Assets/Doodles/Untitled-1fasdf_bjxbpl.png",
+    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697340828/DoodleArrow_wobmgs.png",
     aspectRatio: "1/1",
   };
 
-  console.log(pageData);
+  const config: ImageContainerProps = {
+    src: pageData.container,
+    aspectRatio: "1/1",
+  };
 
   return (
     <>
       <main className={style.main}>
+        <div className={style.floating}>
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+        </div>
         <div
           style={{
             padding: "12px 0px",
@@ -78,14 +88,18 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             borderBottom: "2px solid white",
           }}
         >
-          <p>Hey {pageData.name}, I've been expecting you ;)</p>{" "}
+          <p>Hey {pageData.name}, I've been expecting you 👋</p>{" "}
         </div>
         <header className={style.header}>
           <ImageContainer config={logoConfig} />
         </header>
         <div className={style.backgroundImage}>
           <div></div>
-          <ImageContainer config={mobileBanner} />
+          <div
+            style={{
+              backgroundImage: `linear-gradient( black, ${pageData.color})`,
+            }}
+          ></div>
         </div>
         <div className={style.heading}>
           <h3>{pageData.subHeading}</h3>
@@ -94,7 +108,13 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             RATE BY 157%*
           </p>
           <div className={style.subHeading}>
-            <h3 style={{ fontFamily: "var(--Inter)", fontSize: "14px" }}>
+            <h3
+              style={{
+                fontFamily: "var(--Inter)",
+                fontSize: "14px",
+                color: pageData.highlight,
+              }}
+            >
               When you participate in our market research study. ({" "}
               <span style={{ textDecoration: "underline" }}>
                 Only takes 15-mins
@@ -111,6 +131,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
+              color: pageData.highlight,
             }}
           />
         </div>
@@ -172,6 +193,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
+              color: pageData.highlight,
             }}
           />
         </div>

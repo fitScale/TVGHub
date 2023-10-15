@@ -10,8 +10,7 @@
 
 .header {
   margin-bottom: 20px;
-
-  height: 90px;
+  height: 70px;
   background: black;
   padding: 15px 24px;
   border-bottom: 2px solid white;
@@ -20,8 +19,59 @@
   width: 100%;
 }
 
+.floating {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.floating > div:nth-child(1) {
+  position: absolute;
+  top: 1%;
+  right: -35px;
+  z-index: 100;
+  width: 75px;
+  transform: rotate(-15deg);
+}
+
+.floating > div:nth-child(2) {
+  position: absolute;
+  top: 20%;
+  left: -50px;
+  z-index: 100;
+  width: 75px;
+  transform: rotate(-15deg);
+}
+
+.floating > div:nth-child(3) {
+  position: absolute;
+  top: 45%;
+  right: -40px;
+  z-index: 100;
+  width: 75px;
+  transform: rotate(10deg);
+}
+.floating > div:nth-child(4) {
+  position: absolute;
+  top: 13%;
+  left: -20px;
+  z-index: 0;
+  width: 35px;
+  transform: rotate(25deg);
+  filter: blur(2px);
+}
+.floating > div:nth-child(5) {
+  position: absolute;
+  top: 33%;
+  right: -20px;
+  z-index: 0;
+  width: 35px;
+  transform: rotate(-25deg);
+  filter: blur(2px);
+}
+
 .header > div {
-  height: 85%;
+  height: 63%;
 }
 
 .backgroundImage {
@@ -33,11 +83,13 @@
 }
 
 .backgroundImage > div:first-child {
-  height: 90px;
+  height: 70px;
 }
 
 .backgroundImage > div:last-child {
   border-bottom: 2px solid black;
+  aspect-ratio: 1080/1920;
+  width: 100%;
 }
 
 .heading > h3 {

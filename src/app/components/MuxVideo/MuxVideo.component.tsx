@@ -13,6 +13,7 @@ export interface MuxVideoProps {
   videoCaption: string;
   wall: boolean;
   thumbnail: string;
+  color: string;
 }
 
 const tes = "";
@@ -56,7 +57,10 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
         </>
       ) : (
         <>
-          <div className={style.banner}>
+          <div
+            className={style.banner}
+            style={{ backgroundColor: config.color }}
+          >
             <p>
               {" "}
               Watch to figure out how to claim your{" "}
