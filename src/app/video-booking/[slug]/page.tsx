@@ -75,6 +75,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           <ImageContainer config={config} />
           <ImageContainer config={config} />
           <ImageContainer config={config} />
+          <ImageContainer config={config} />
         </div>
         <div
           style={{
@@ -89,7 +90,8 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           }}
         >
           <p>
-            Hey {pageData.name}, {"I've been expecting you 👋"}
+            <span style={{ fontWeight: "800" }}>Hey {pageData.name}</span>,{" "}
+            {"I've been expecting you 👋"}
           </p>{" "}
         </div>
         <header className={style.header}>

@@ -32,6 +32,7 @@
   z-index: 100;
   width: 75px;
   transform: rotate(-15deg);
+  filter: drop-shadow(1px 1px 10px rgb(0, 0, 0, 0.5));
 }
 
 .floating > div:nth-child(2) {
@@ -41,6 +42,7 @@
   z-index: 100;
   width: 75px;
   transform: rotate(-15deg);
+  filter: drop-shadow(1px 1px 10px rgb(0, 0, 0, 0.5));
 }
 
 .floating > div:nth-child(3) {
@@ -67,6 +69,16 @@
   z-index: 0;
   width: 35px;
   transform: rotate(-25deg);
+  filter: blur(2px);
+}
+
+.floating > div:nth-child(6) {
+  position: absolute;
+  top: 25%;
+  right: 15px;
+  z-index: 0;
+  width: 35px;
+  transform: rotate(25deg);
   filter: blur(2px);
 }
 
