@@ -71,6 +71,7 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
           </div>
           <div className={style.videoContainer}>
             <MuxPlayer
+              poster="https://image.mux.com/hxn02MLOAICEZZAiJNOw5MXGFUao9Dm3B4GcqfntA01fY/thumbnail.png?time=5.25"
               streamType="on-demand"
               playbackId={config.videoId}
               metadata={{
