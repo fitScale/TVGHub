@@ -222,18 +222,67 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         </footer>
       </main>
       <main className={style.mainDesktop}>
+        <div className={style.floating}>
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+          <ImageContainer config={config} />
+        </div>
+        <div
+          style={{
+            padding: "12px 0px",
+            width: "100%",
+            backgroundColor: pageData.color,
+            textAlign: "center",
+            color: "white",
+            fontWeight: "700",
+            fontSize: "13px",
+            borderBottom: "2px solid white",
+          }}
+        >
+          <p>
+            <span style={{ fontWeight: "900" }}>Hey {pageData.name}</span>,{" "}
+            {"I've been expecting you 👋"}
+          </p>{" "}
+        </div>
         <header className={style.header}>
           <ImageContainer config={logoConfig} />
         </header>
         <div className={style.backgroundImage}>
           <div></div>
-          <ImageContainer config={desktopBanner} />
+          <div
+            style={{
+              backgroundImage: `linear-gradient( black, ${pageData.color})`,
+            }}
+          ></div>
         </div>
         <div className={style.heading}>
           <h3>{pageData.subHeading}</h3>
-          <PortableText value={pageData.heading} />
+          <p style={{ fontWeight: "900" }}>
+            {" "}
+            BOOST YOUR CONVERSION <br />
+            RATE BY 157%*
+          </p>
           <div className={style.subHeading}>
-            <h3>{pageData.headingCopy}</h3>
+            <h3
+              style={{
+                fontFamily: "var(--Inter)",
+                fontSize: "22px",
+                color: pageData.highlight,
+              }}
+            >
+              When you participate in our market research study. ({" "}
+              <span style={{ textDecoration: "underline" }}>
+                Only takes 15-mins
+              </span>
+              {""} )
+            </h3>
             <ImageContainer config={doodleConfig} />
           </div>
         </div>

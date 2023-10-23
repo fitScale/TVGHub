@@ -304,6 +304,8 @@ const Svg = ({ icon, color, size, stroke }: SvgProps) => {
         style={{ fill: color ? color : "black", height: size ? size : "20px" }}
       />
     );
+  } else {
+    return <div></div>;
   }
 };
 
