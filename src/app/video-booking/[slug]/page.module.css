@@ -354,9 +354,10 @@
   .floating > div:nth-child(9) {
     position: absolute;
     top: 115%;
-    left: 8%;
+    left: 9%;
     z-index: -1;
     width: 50px;
+    display: none;
     transform: rotate(15deg);
     filter: blur(2px);
   }
@@ -380,7 +381,7 @@
 
   .backgroundImage > div:last-child {
     border-bottom: 2px solid black;
-    aspect-ratio: 1920/1500;
+    aspect-ratio: 1920/1700;
     width: 100%;
   }
 

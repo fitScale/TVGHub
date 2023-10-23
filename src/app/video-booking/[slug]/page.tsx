@@ -299,6 +299,66 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         </div>
 
         <div className={style.book}>
+          <p
+            style={{
+              color: "white",
+              padding: " 0px 24px",
+              fontSize: "12px",
+              fontWeight: "600",
+              marginBottom: "25px",
+            }}
+          >
+            ( <span style={{ fontWeight: "900" }}>*</span>The percentage
+            increase is based on the average performance uplift seen by our
+            clients compared to standard website traffic. )
+          </p>
+          <div style={{ width: "30%", padding: "0px 24px" }}>
+            <div className={style.trust}>
+              <p>
+                We have made landing pages for{" "}
+                <span
+                  style={{ fontWeight: "700", textDecoration: "underline" }}
+                >
+                  top brands:
+                </span>
+              </p>
+              <div>
+                <ImageContainer
+                  config={{
+                    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697346345/prosupps-logo_uwitld.png",
+                    aspectRatio: "1200/156",
+                  }}
+                />
+                <ImageContainer
+                  config={{
+                    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697346345/White_Klout_prfjkb.png",
+                    aspectRatio: "300/108",
+                  }}
+                />
+                <ImageContainer
+                  config={{
+                    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697346345/Purus_axgqyz.png",
+                    aspectRatio: "1355/183",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          <p
+            style={{
+              marginTop: "5px",
+              color: "white",
+              fontWeight: "600",
+              fontSize: "14px",
+              marginBottom: "20px",
+            }}
+          >
+            The only question is...{" "}
+            <span style={{ fontWeight: "800", textDecoration: "underline" }}>
+              Are you next
+            </span>{" "}
+            ?
+          </p>
           <h3>{pageData.bookingText}</h3>
           <div>
             <Svg icon="ArrowSkinnyIcon" color="white" />
