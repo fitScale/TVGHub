@@ -385,6 +385,10 @@
     width: 100%;
   }
 
+  .x {
+    color: white;
+  }
+
   .header {
     margin-bottom: 20px;
     height: 75px;
