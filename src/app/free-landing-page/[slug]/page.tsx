@@ -247,7 +247,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         >
           <p>
             <span style={{ fontWeight: "900" }}>Hey {pageData.name}</span>,{" "}
-            {"I've been expecting you 👋"}
+            {"hope your having an awesome day! 💪"}
           </p>{" "}
         </div>
         <header className={style.header}>
