@@ -80,7 +80,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           style={{
             padding: "12px 0px",
             width: "100%",
-            backgroundColor: pageData.highlight,
+            backgroundColor: pageData.color,
             textAlign: "center",
             color: "white",
             fontWeight: "700",
@@ -135,7 +135,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
-              color: pageData.highlight,
+              color: pageData.color,
             }}
           />
         </div>
@@ -292,7 +292,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
-              color: pageData.highlight,
+              color: pageData.color,
             }}
           />
         </div>
