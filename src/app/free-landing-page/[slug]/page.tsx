@@ -8,7 +8,6 @@ import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
 export const dynamic = "force-dynamic";
-export const revalidate = 1;
 
 const client = createClient({
   projectId: "xo86se8r",
@@ -81,7 +80,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           style={{
             padding: "12px 0px",
             width: "100%",
-            backgroundColor: pageData.color,
+            backgroundColor: pageData.highlight,
             textAlign: "center",
             color: "white",
             fontWeight: "700",
@@ -91,7 +90,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         >
           <p>
             <span style={{ fontWeight: "900" }}>Hey {pageData.name}</span>,{" "}
-            {"I've been expecting you 👋"}
+            {"hope your having an awesome day! 💪"}
           </p>{" "}
         </div>
         <header className={style.header}>
@@ -136,7 +135,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
-              color: pageData.color,
+              color: pageData.highlight,
             }}
           />
         </div>
@@ -293,7 +292,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               videoCaption: pageData.videoBannerCopy,
               wall: pageData.walled,
               thumbnail: thumbnail[0].url,
-              color: pageData.color,
+              color: pageData.highlight,
             }}
           />
         </div>
