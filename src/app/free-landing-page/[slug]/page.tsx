@@ -80,7 +80,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           style={{
             padding: "12px 0px",
             width: "100%",
-            backgroundColor: pageData.color,
+            backgroundColor: pageData.highlight,
             textAlign: "center",
             color: "white",
             fontWeight: "700",
@@ -237,7 +237,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
           style={{
             padding: "12px 0px",
             width: "100%",
-            backgroundColor: pageData.color,
+            backgroundColor: pageData.highlight,
             textAlign: "center",
             color: "white",
             fontWeight: "700",
