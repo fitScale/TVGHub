@@ -19,6 +19,14 @@ export async function generateStaticParams() {
     { slug: "alex-pineda" },
     { slug: "zach-zimmerly" },
     { slug: "sharif-sayed" },
+    { slug: "tyrone-faverey" },
+    { slug: "josh-conyers" },
+    { slug: "burst-creatine" },
+    { slug: "munch-better" },
+    { slug: "lakota-tow" },
+    { slug: "inherit-energy" },
+    { slug: "john-wilson" },
+    { slug: "miller-maines" },
   ];
 }
 
@@ -221,8 +229,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             <p>About Fit-Solutions:</p>
             <p>
               Fit-Solutions offers strategic partnership and guidance to sports
-              nutrition brands, helping them transition from product-based to
-              solution-based businesses to achieve market leadership and
+              nutrition brands, helping them to achieve market leadership and
               sustainable growth in todays competitive market.
             </p>
           </div>
