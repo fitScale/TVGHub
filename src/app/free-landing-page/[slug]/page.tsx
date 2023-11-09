@@ -51,8 +51,8 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
   const pageData = await findDocumentBySlug(params.slug);
 
   const logoConfig: ImageContainerProps = {
-    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697340935/FitScaleLogo1_q74m0w.png",
-    aspectRatio: "1080/219",
+    src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1699559484/Purus%20Labs/Fit-Solutions_Logo-min_vlwmdh.png",
+    aspectRatio: "1499/152",
   };
 
   const mobileBanner: ImageContainerProps = {
