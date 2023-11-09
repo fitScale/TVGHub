@@ -43,6 +43,8 @@ async function findDocumentBySlug(urlSlug: string) {
   return matchedDocument;
 }
 
+const test2 = 1;
+
 const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
   console.log(params.slug);
 
