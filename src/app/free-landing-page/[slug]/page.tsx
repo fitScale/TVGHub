@@ -1,5 +1,3 @@
-"use client";
-
 import style from "./page.module.css";
 import { createClient } from "next-sanity";
 import MuxVideo from "../../components/MuxVideo/MuxVideo.component";
@@ -9,19 +7,19 @@ import ImageContainer, {
 import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
-// export async function generateStaticParams() {
-//   return [
-//     { slug: "milan-dave" },
-//     { slug: "brandon-kelly" },
-//     { slug: "christian-ricks" },
-//     { slug: "javier-figueroa" },
-//     { slug: "chandler-burner" },
-//     { slug: "alex-pineda" },
-//     { slug: "zach-zimmerly" },
-//   ];
-// }
+export async function generateStaticParams() {
+  return [
+    { slug: "milan-dave" },
+    { slug: "brandon-kelly" },
+    { slug: "christian-ricks" },
+    { slug: "javier-figueroa" },
+    { slug: "chandler-burner" },
+    { slug: "alex-pineda" },
+    { slug: "zach-zimmerly" },
+  ];
+}
 
 const client = createClient({
   projectId: "xo86se8r",
