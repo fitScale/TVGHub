@@ -1,3 +1,5 @@
+"use client";
+
 import style from "./page.module.css";
 import { createClient } from "next-sanity";
 import MuxVideo from "../../components/MuxVideo/MuxVideo.component";
