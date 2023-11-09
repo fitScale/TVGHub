@@ -31,7 +31,7 @@ const client = createClient({
 async function findDocumentBySlug(urlSlug: string) {
   // Fetch all documents of type 'videoBooking'
   const query = '*[_type == "videoBooking"]';
-  const allDocuments = await client.fetch(query);
+  const allDocuments = await client.fetch(query, { cache: "no-store" });
 
   // Find the document where the slug matches
   const matchedDocument = allDocuments.find(
