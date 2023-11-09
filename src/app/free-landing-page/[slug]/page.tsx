@@ -7,14 +7,13 @@ import ImageContainer, {
 import { PortableText } from "@portabletext/react";
 import Calendly from "@/app/components/Calendly/Calendly.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
-// export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
   return [
     { slug: "brandon-kelly" },
     { slug: "christian-ricks" },
     { slug: "milan-dave" },
-
     { slug: "javier-figueroa" },
     { slug: "chandler-burner" },
     { slug: "alex-pineda" },

@@ -2,7 +2,7 @@
 
 import MuxPlayer from "@mux/mux-player-react";
 import style from "./MuxVideo.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ImageContainer from "../ImageContainer/ImageContainer.component";
 import Svg from "../../../../public/svgs/svgComponent/svg.component";
 import SubscribeForm from "../SubscriptionForm/SubsrcriptionForm.component";
@@ -16,11 +16,20 @@ export interface MuxVideoProps {
   color: string;
 }
 
-const tes = "";
-
 const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
   const [wall, setWall] = useState(config.wall);
   const [form, setForm] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  // Run effect on mount to set the client-side rendering flag
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // Render nothing if it's not client-side
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <div
@@ -62,11 +71,10 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
             style={{ backgroundColor: config.color }}
           >
             <p style={{ fontWeight: "600" }}>
-              {" "}
               Watch to see how to claim your{" "}
               <span style={{ fontWeight: "800", textDecoration: "underline" }}>
                 FREE landing page!
-              </span>{" "}
+              </span>
             </p>
           </div>
           <div className={style.videoContainer}>
