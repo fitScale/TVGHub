@@ -44,14 +44,6 @@ async function findDocumentBySlug(urlSlug: string) {
 const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
   const pageData = await findDocumentBySlug(params.slug);
 
-  const videoData = await client.fetch(
-    `*[_id == "${pageData.video.asset["_ref"]}"]`
-  );
-
-  const thumbnail = await client.fetch(
-    `*[_id == "${pageData.thumbnail.asset["_ref"]}"]`
-  );
-
   const logoConfig: ImageContainerProps = {
     src: "https://res.cloudinary.com/dod9nbjke/image/upload/v1697340935/FitScaleLogo1_q74m0w.png",
     aspectRatio: "1080/219",
@@ -143,10 +135,6 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         <div className={style.videoPadding}>
           <MuxVideo
             config={{
-              videoId: videoData[0].playbackId,
-              videoCaption: pageData.videoBannerCopy,
-              wall: pageData.walled,
-              thumbnail: thumbnail[0].url,
               color: pageData.color,
             }}
           />
@@ -300,10 +288,6 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         <div className={style.videoPadding}>
           <MuxVideo
             config={{
-              videoId: videoData[0].playbackId,
-              videoCaption: pageData.videoBannerCopy,
-              wall: pageData.walled,
-              thumbnail: thumbnail[0].url,
               color: pageData.color,
             }}
           />
