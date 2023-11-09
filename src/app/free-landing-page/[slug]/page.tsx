@@ -42,6 +42,8 @@ async function findDocumentBySlug(urlSlug: string) {
 }
 
 const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
+  console.log(params.slug);
+
   const pageData = await findDocumentBySlug(params.slug);
 
   const logoConfig: ImageContainerProps = {
