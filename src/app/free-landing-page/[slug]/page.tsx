@@ -21,7 +21,7 @@ export async function generateStaticParams() {
   ];
 }
 
-const test = 1;
+const test = 2;
 
 const client = createClient({
   projectId: "xo86se8r",
