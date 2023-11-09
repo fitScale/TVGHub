@@ -217,10 +217,12 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
         </div>
         <footer className={style.footer}>
           <div className={style.footerAbout}>
-            <p>ABOUT FitScale:</p>
+            <p>About Fit-Solutions:</p>
             <p>
-              We are a digital marketing and consulting group 100% focused on
-              the fitness industry.
+              Fit-Solutions offers strategic partnership and guidance to sports
+              nutrition brands, helping them transition from product-based to
+              solution-based businesses to achieve market leadership and
+              sustainable growth in today's competitive market.
             </p>
           </div>
           <p>© 2023, FitScale</p>
