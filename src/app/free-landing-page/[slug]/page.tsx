@@ -222,7 +222,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               Fit-Solutions offers strategic partnership and guidance to sports
               nutrition brands, helping them transition from product-based to
               solution-based businesses to achieve market leadership and
-              sustainable growth in today's competitive market.
+              sustainable growth in todays competitive market.
             </p>
           </div>
           <p>© 2023, FitScale</p>
@@ -377,7 +377,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               Fit-Solutions offers strategic partnership and guidance to sports
               nutrition brands, helping them transition from product-based to
               solution-based businesses to achieve market leadership and
-              sustainable growth in today's competitive market.
+              sustainable growth in todays competitive market.
             </p>
           </div>
           <p>© 2023, FitScale</p>
