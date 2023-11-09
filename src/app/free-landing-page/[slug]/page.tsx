@@ -14,7 +14,7 @@ export async function generateStaticParams() {
     { slug: "brandon-kelly" },
     { slug: "christian-ricks" },
     { slug: "milan-dave" },
-    { slug: "zach-zimmerly" },
+    // { slug: "zach-zimmerly" },
     { slug: "javier-figueroa" },
     { slug: "chandler-burner" },
     { slug: "alex-pineda" },
