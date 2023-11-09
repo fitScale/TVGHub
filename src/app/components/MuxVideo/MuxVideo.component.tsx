@@ -21,9 +21,6 @@ const MuxVideo = ({ config }: { config: MuxVideoProps }) => {
   }, []);
 
   // Render nothing if it's not client-side
-  if (!isClient) {
-    return null;
-  }
 
   return (
     <div
