@@ -11,7 +11,7 @@ import Svg from "../../../../public/svgs/svgComponent/svg.component";
 
 export async function generateStaticParams() {
   return [
-    { slug: "milan-davee" },
+    { slug: "milan-dave" },
     { slug: "brandon-kelly" },
     { slug: "christian-ricks" },
     { slug: "javier-figueroa" },
