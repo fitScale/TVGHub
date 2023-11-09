@@ -11,13 +11,13 @@ import Svg from "../../../../public/svgs/svgComponent/svg.component";
 
 export async function generateStaticParams() {
   return [
+    { slug: "zach-zimmerly" },
     { slug: "brandon-kelly" },
     { slug: "christian-ricks" },
     { slug: "milan-dave" },
     { slug: "javier-figueroa" },
     { slug: "chandler-burner" },
     { slug: "alex-pineda" },
-    { slug: "zach-zimmerly" },
   ];
 }
 
