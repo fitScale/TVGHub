@@ -21,6 +21,8 @@ export async function generateStaticParams() {
   ];
 }
 
+const test = 1;
+
 const client = createClient({
   projectId: "xo86se8r",
   dataset: "production",
