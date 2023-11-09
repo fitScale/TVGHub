@@ -7,8 +7,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--Inter" });
 const caveat = Caveat({ subsets: ["latin"], variable: "--Caveat" });
 
 export const metadata: Metadata = {
-  title: "FitScale - We Scale Fitness Brands",
-  description: "",
+  title: "Fit-Solutions: We Help Fitness Brands Scale.",
+  description:
+    "Claim a FREE custom-coded landing page (an $825 value!) for your brand when you participate in our marketing research study (only takes 15 minutes). ",
   themeColor: "black",
 };
 

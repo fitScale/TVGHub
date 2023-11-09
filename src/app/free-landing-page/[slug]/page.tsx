@@ -233,7 +233,7 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
               sustainable growth in todays competitive market.
             </p>
           </div>
-          <p>© 2023, FitScale</p>
+          <p>© 2023, Fit-Solutions</p>
         </footer>
       </main>
       <main className={style.mainDesktop}>
@@ -383,12 +383,11 @@ const VideoBookingPage = async ({ params }: { params: { slug: string } }) => {
             <p>About Fit-Solutions:</p>
             <p>
               Fit-Solutions offers strategic partnership and guidance to sports
-              nutrition brands, helping them transition from product-based to
-              solution-based businesses to achieve market leadership and
+              nutrition brands, helping them to achieve market leadership and
               sustainable growth in todays competitive market.
             </p>
           </div>
-          <p>© 2023, FitScale</p>
+          <p>© 2023, Fit-Solutions</p>
         </footer>
       </main>
     </>
