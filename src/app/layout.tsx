@@ -9,7 +9,7 @@ const caveat = Caveat({ subsets: ["latin"], variable: "--Caveat" });
 export const metadata: Metadata = {
   title: "Fit-Solutions: We Help Fitness Brands Scale.",
   description:
-    "Claim a FREE custom-coded landing page (an $825 value!) for your brand when you participate in our marketing research study (only takes 15 minutes). ",
+    "Claim a FREE custom-coded landing page (an $697 value!) for your brand when you participate in our marketing research study (only takes 15 minutes). ",
   themeColor: "black",
 };
 
